@@ -1,21 +1,27 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { React } from 'react';
+// import { StyleSheet, Text, View, ScrollView } from 'react-native';
+import Deck  from './Deck';
+import Table from './Table'
+
 
 export default function App() {
+
+  
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <section>
+      <Table />
+      <p>App</p>
+    </section>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#2c8257',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   },
+// });
+
