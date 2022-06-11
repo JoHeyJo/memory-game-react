@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import Deck from './Deck'
+import Card from './Card'
+import { getDeckId } from './utils.deck';
 
 function Table() {
   const [cards, setcards] = useState([]);
+  // const [deckId, setDeckId] = useState[null];
 
   // function getCards(card){
   //   setcards(cards => [...cards, card])
@@ -10,8 +12,9 @@ function Table() {
 
   return (
     <section>
-      <Deck />
       <p>Table</p>
+    {/* <button onSubmit={}>Click me</button> */}
+      <Card />
     </section>
   )
 }

@@ -1,7 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { React } from 'react';
 // import { StyleSheet, Text, View, ScrollView } from 'react-native';
-import Deck  from './Deck';
 import Table from './Table'
 
 
