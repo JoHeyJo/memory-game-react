@@ -1,22 +1,24 @@
 import React, { useState } from 'react';
-import Card from './Card'
-import { getDeckId } from './utils.deck';
+import GetCard from './GetCard'
+import { getDeckId } from './utils/deck';
 
 function Table() {
   const [cards, setcards] = useState([]);
-  // const [deckId, setDeckId] = useState[null];
+  const [deckId, setDeckId] = useState(null)
 
-  // function getCards(card){
-  //   setcards(cards => [...cards, card])
-  // }
+  async function fetchDeckId(){
+    const deckId = await getDeckId();
+    setDeckId(deckId)
+    console.log('deck id', deckId)
+  }
 
   return (
     <section>
       <p>Table</p>
-    {/* <button onSubmit={}>Click me</button> */}
-      <Card />
-    </section>
+    <button onClick={fetchDeckId}>Click me for deck id</button>
+      <GetCard deckId={deckId} fetchDeckId={fetchDeckId} foo={"whatever"}/>
+    </section> 
   )
 }
 
-export default Table;
+export default Table; 
