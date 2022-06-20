@@ -16,13 +16,3 @@ export default function App() {
     </section>
   );
 }
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#2c8257',
-//     alignItems: 'center',
-//     justifyContent: 'center',
-//   },
-// });
-

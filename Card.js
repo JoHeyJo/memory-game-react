@@ -1,8 +1,8 @@
 import react, { useState }from "react";
 import { View, Image } from 'react-native';
 
+/** Card component */
 function Card({ card }) {
-  console.log('in Card', card)
   return (
     <View>
       <section>

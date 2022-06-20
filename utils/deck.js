@@ -11,6 +11,7 @@ async function getDeckId(){
 
 }
 
+/** pings card api and returns cards from the same deck using a deck id */
 async function getCards(deckId){
   const response = await axios.get(`${BASE_URL}/deck/${deckId}/draw/?count=7`)
   return response.data
