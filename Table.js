@@ -26,6 +26,7 @@ function Table() {
   */
   useEffect(
     async function fetchCard() {
+      setCards([]);
       const cardsPromise = await getCards(deckId);
       setCards(cardsPromise.cards);
     },[deckId])
@@ -34,7 +35,9 @@ function Table() {
     <section>
       <p>Table</p>
     <button onClick={fetchDeckId}>Click me to set table</button>
-      <GetCard cards={cards}/>
+      <section id="card-area">
+        <GetCard cards={cards}/>
+      </section>
     </section> 
   )
 }
